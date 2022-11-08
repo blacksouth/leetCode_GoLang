@@ -23,12 +23,9 @@ package main
 
 func MaxProfitTwo(prices []int) int {
 	var max = 0
-	for i := 0; i < len(prices); i++ {
-		num := prices[i]
-		var numNext = 0
-		if i < len(prices)-1 {
-			numNext = prices[i+1]
-		}
+	for i := 1; i < len(prices); i++ {
+		numNext := prices[i]
+		num := prices[i-1]
 		if numNext > num {
 			max += numNext - num
 		}
