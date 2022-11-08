@@ -6,7 +6,11 @@ import (
 
 func main() {
 
-	var arr = []int{7, 1, 5, 3, 6, 4}
+	var arr = []int{1, 2, 3, 4, 5, 6}
 	//买卖股票的最佳时机 1
-	fmt.Print(MaxProfitOne(arr))
+	// fmt.Print(MaxProfitOne(arr))
+
+	//买卖股票的最佳时机 2
+	fmt.Print(MaxProfitTwo(arr))
+
 }
