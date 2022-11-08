@@ -22,21 +22,6 @@ package main
 //升级版买卖股票的最佳时机
 
 func MaxProfitTwo(prices []int) int {
-	var min int
-	var max = 0
 
-	for i := 0; i < len(prices); i++ {
-		num := prices[i]
-		if i == 0 {
-			min = num
-		}
-		if min > num {
-			min = num
-		} else {
-			if num-min > max {
-				max = num - min
-			}
-		}
-	}
-	return max
+	return 1
 }
